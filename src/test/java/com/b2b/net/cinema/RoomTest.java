@@ -6,9 +6,9 @@ import static org.junit.Assert.*;
 
 public class RoomTest {
 
-    private Room room1;
-    private Room room2;
-    private Room room3;
+    private Room room1 = new Room ("Room 1", 90);
+    private Room room2 = new Room ("Room 2", 150);
+    private Room room3 = new Room ("Room 3", 300);
 
     /**
     Sala jest mala, jezeli ma mniej niz 100 miejsc,
