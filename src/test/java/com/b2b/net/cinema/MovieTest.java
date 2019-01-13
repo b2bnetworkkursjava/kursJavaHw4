@@ -4,10 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+
 public class MovieTest {
 
-    private Movie dieHard;
-    private Movie ironMan;
+    private Movie dieHard = new Movie ("dieHard", "action", false, true);
+    private Movie ironMan = new Movie ("ironMan", "comedy", true, false);
 
     @Test
     public void isMovieWithDubbing() {

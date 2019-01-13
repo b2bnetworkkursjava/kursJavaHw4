@@ -6,14 +6,14 @@ import static org.junit.Assert.*;
 
 public class TicketTest {
 
-    private Ticket ticket1 = new Ticket();
-    private Ticket ticket2 = new Ticket();
-    private Ticket ticket3 = new Ticket();
-    private Ticket ticket4 = new Ticket();
-    private Ticket ticket5 = new Ticket();
-    private Ticket ticket6 = new Ticket();
-    private Ticket ticket7 = new Ticket();
-    private Ticket ticket8 = new Ticket();
+    private Ticket ticket1 = new Ticket(29.0,40, 9);
+    private Ticket ticket2 = new Ticket(35.0,45,9);
+    private Ticket ticket3 = new Ticket(35.0,50,9);
+    private Ticket ticket4 = new Ticket(30.0,46,6);
+    private Ticket ticket5 = new Ticket(50.0,60,3);
+    private Ticket ticket6 = new Ticket(20.0,5,10);
+    private Ticket ticket7 = new Ticket(60.0,15,9);
+    private Ticket ticket8 = new Ticket(90.0,10,4);
 
     /**
     Cena biletu jest niska kiedy kosztuje mniej niz 30,-
