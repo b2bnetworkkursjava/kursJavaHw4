@@ -6,14 +6,14 @@ import static org.junit.Assert.*;
 
 public class TicketTest {
 
-    private Ticket ticket1 = new Ticket();
-    private Ticket ticket2 = new Ticket();
-    private Ticket ticket3 = new Ticket();
-    private Ticket ticket4 = new Ticket();
-    private Ticket ticket5 = new Ticket();
-    private Ticket ticket6 = new Ticket();
-    private Ticket ticket7 = new Ticket();
-    private Ticket ticket8 = new Ticket();
+    private Ticket ticket1 = new Ticket(15, 5, 7);
+    private Ticket ticket2 = new Ticket(13, 4, 10);
+    private Ticket ticket3 = new Ticket(25, 8, 14);
+    private Ticket ticket4 = new Ticket(34, 10,5);
+    private Ticket ticket5 = new Ticket(35, 1, 10);
+    private Ticket ticket6 = new Ticket(10, 9, 5);
+    private Ticket ticket7 = new Ticket(16, 14, 2);
+    private Ticket ticket8 = new Ticket(39, 11,13);
 
     /**
     Cena biletu jest niska kiedy kosztuje mniej niz 30,-
@@ -29,32 +29,47 @@ public class TicketTest {
 
     @Test
     public void isTicketPriceLow() {
-        assertTrue(ticket1.getPrice() < 30.0);
+        assertTrue(ticket1.getPrice() < 30);
+        assertTrue(ticket2.getPrice() < 30);
+        assertTrue(ticket3.getPrice() < 30);
+        assertTrue(ticket6.getPrice() < 30);
+        assertTrue(ticket7.getPrice() < 30);
     }
 
     @Test
     public void isTicketPriceHigh() {
-        assertTrue(ticket2.getPrice() > 30.0);
+        assertTrue(ticket4.getPrice() > 30.0);
+        assertTrue(ticket5.getPrice() > 30.0);
+        assertTrue(ticket8.getPrice() > 30.0);
     }
 
     @Test
     public void isPlaceHigh() {
+        assertTrue(ticket2.getNoOfRow() > 7);
         assertTrue(ticket3.getNoOfRow() > 7);
+        assertTrue(ticket5.getNoOfRow() > 7);
+        assertTrue(ticket8.getNoOfRow() > 7);
     }
+
 
     @Test
     public void isPlaceMedium() {
-        assertTrue(ticket4.getNoOfRow() > 3 && ticket4.getNoOfRow() < 8);
+        assertTrue(ticket1.getNoOfRow() > 3 && ticket1.getNoOfRow() < 9);
+        assertTrue(ticket4.getNoOfRow() > 3 && ticket4.getNoOfRow() < 9);
+        assertTrue(ticket6.getNoOfRow() > 3 && ticket6.getNoOfRow() < 9);
     }
 
     @Test
     public void isPlaceLow() {
-        assertTrue(ticket5.getNoOfRow() < 4);
+        assertTrue(ticket7.getNoOfRow() < 5);
     }
 
     @Test
     public void isPlaceRight() {
-        assertTrue(ticket6.getNoOfSeat() < 8);
+        assertTrue(ticket1.getNoOfSeat() < 8);
+        assertTrue(ticket2.getNoOfSeat() < 8);
+        assertTrue(ticket5.getNoOfSeat() < 8);
+        assertTrue(ticket7.getNoOfSeat() < 8);
     }
 
     @Test
@@ -64,6 +79,9 @@ public class TicketTest {
 
     @Test
     public void isPlaceCentral() {
+        assertTrue(ticket3.getNoOfSeat() > 7 && ticket8.getNoOfSeat() < 13);
+        assertTrue(ticket4.getNoOfSeat() > 7 && ticket8.getNoOfSeat() < 13);
+        assertTrue(ticket6.getNoOfSeat() > 7 && ticket8.getNoOfSeat() < 13);
         assertTrue(ticket8.getNoOfSeat() > 7 && ticket8.getNoOfSeat() < 13);
     }
 }
