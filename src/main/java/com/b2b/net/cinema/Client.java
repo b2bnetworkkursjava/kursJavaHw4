@@ -3,8 +3,8 @@ package com.b2b.net.cinema;
 public class Client {
 
     /**
-     Klasa pokazowa, na wzor tego uzupelnij pozostale klasy.
-     Konstruktory w kazdej z klas i wszystkie metody get i set.
+     * Klasa pokazowa, na wzor tego uzupelnij pozostale klasy.
+     * Konstruktory w kazdej z klas i wszystkie metody get i set.
      */
 
     private int age;
