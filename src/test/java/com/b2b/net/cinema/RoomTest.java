@@ -6,18 +6,19 @@ import static org.junit.Assert.*;
 
 public class RoomTest {
 
-    private Room room1;
-    private Room room2;
-    private Room room3;
+    private Room room1 = new Room("Small", 80);
+    private Room room2 = new Room("Medium", 190);
+    private Room room3 = new Room("Large", 300);
 
     /**
-    Sala jest mala, jezeli ma mniej niz 100 miejsc,
-    srednia kiedy ma wiecej niz 100 miejsc, ale mniej niz 200
-    i duza, kiedy ma ponad 250 miejsc.
+     Sala jest mala, jezeli ma mniej niz 100 miejsc,
+     srednia kiedy ma wiecej niz 100 miejsc, ale mniej niz 200
+     i duza, kiedy ma ponad 250 miejsc.
      */
 
     @Test
     public void isRoomSmallSize() {
+
         assertTrue(room1.getSize() < 100);
     }
 
