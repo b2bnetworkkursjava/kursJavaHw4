@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 
 public class MovieTest {
 
-    private Movie dieHard;
-    private Movie ironMan;
+    private Movie dieHard=new Movie("DieHard", "thriller", false, true);
+    private Movie ironMan=new Movie ("IronMan", "comedy", true, false);
 
     @Test
     public void isMovieWithDubbing() {
