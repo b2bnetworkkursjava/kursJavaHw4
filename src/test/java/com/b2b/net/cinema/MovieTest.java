@@ -23,4 +23,36 @@ public class MovieTest {
     public void isMovieGenreComedy() {
         assertEquals(ironMan.getGenre(), "comedy");
     }
+
+    @Test
+    public void getTitle() {
+    }
+
+    @Test
+    public void setTitle() {
+    }
+
+    @Test
+    public void getGenre() {
+    }
+
+    @Test
+    public void setGenre() {
+    }
+
+    @Test
+    public void isDubbing() {
+    }
+
+    @Test
+    public void setDubbing() {
+    }
+
+    @Test
+    public void isSubtitles() {
+    }
+
+    @Test
+    public void setSubtitles() {
+    }
 }

@@ -6,29 +6,36 @@ public class Ticket {
     private int noOfSeat;
     private int noOfRow;
 
-
-
-    public double getPrice() {
-        return 0.0;
+    public Ticket(double price, int noOfSeat, int noOfRow) {
+        this.price = price;
+        this.noOfSeat = noOfSeat;
+        this.noOfRow = noOfRow;
     }
 
-    public void setPrice() {
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
 
     }
 
     public int getNoOfSeat() {
-        return 0;
+        return noOfSeat;
     }
 
-    public void setNoOfSeat() {
+    public void setNoOfSeat(int noOfSeat) {
+        this.noOfSeat = noOfSeat;
 
     }
 
     public int getNoOfRow() {
-        return 0;
+        return noOfRow;
     }
 
-    public void setNoOfRow() {
+    public void setNoOfRow(int noOfRow) {
+        this.noOfRow = noOfRow;
 
     }
 }
