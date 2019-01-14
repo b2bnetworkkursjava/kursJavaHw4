@@ -14,7 +14,7 @@ public class Movie {
     }
 
     public String getTitle() {
-        return "";
+        return title;
     }
 
     public void setTitle() {
@@ -22,11 +22,11 @@ public class Movie {
     }
 
     public String getGenre() {
-        return "";
+        return genre;
     }
 
     public void setGenre(String genre) {
-
+        this.genre = genre;
     }
 
     public boolean isDubbing() {
@@ -34,14 +34,14 @@ public class Movie {
     }
 
     public void setDubbing(boolean dubbing) {
-
+this.dubbing = dubbing;
     }
 
     public boolean isSubtitles() {
         return true;
     }
 
-    public void setSubtitles() {
-
+    public void setSubtitles(boolean Subtitles) {
+this.subtitles = subtitles;
     }
 }

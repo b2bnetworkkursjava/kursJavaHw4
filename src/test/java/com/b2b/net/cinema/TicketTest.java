@@ -6,17 +6,18 @@ import static org.junit.Assert.*;
 
 public class TicketTest {
 
-    private Ticket ticket1 = new Ticket();
-    private Ticket ticket2 = new Ticket();
-    private Ticket ticket3 = new Ticket();
-    private Ticket ticket4 = new Ticket();
-    private Ticket ticket5 = new Ticket();
-    private Ticket ticket6 = new Ticket();
-    private Ticket ticket7 = new Ticket();
-    private Ticket ticket8 = new Ticket();
+    private Ticket ticket1 = new Ticket(20,13,7);
+    private Ticket ticket2 = new Ticket(35, 12,4);
+    private Ticket ticket3 = new Ticket(39,14,14);
+    private Ticket ticket4 = new Ticket(48,25,6);
+    private Ticket ticket5 = new Ticket(55,19,2);
+    private Ticket ticket6 = new Ticket(45,6,5);
+    private Ticket ticket7 = new Ticket(78,33,14);
+    private Ticket ticket8 = new Ticket(50,10,12);
+
 
     /**
-    Cena biletu jest niska kiedy kosztuje mniej niz 30,-
+    Cena biletu jest niska kiedy kosztuje mniej niz 30,
     badz wysoka kiedy kosztuje wiecej niz 30,-
     Miejsce usytuowane jest wysoko, kiedy znajduje sie
     w rzedzie 8 badz wyzej, srednio kiedy znajduje sie
