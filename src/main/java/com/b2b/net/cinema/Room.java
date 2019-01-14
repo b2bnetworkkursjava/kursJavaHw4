@@ -6,19 +6,20 @@ public class Room {
     private int size;
 
     public Room(String name, int size) {
-
+        this.name=name;
+        this.size=size;
     }
 
     public String getName() {
-        return "";
+        return name;
     }
 
     public void setName(String name) {
-
+this.name=name;
     }
 
     public int getSize() {
-        return 0;
+        return size;
     }
 
     public void setSize() {
