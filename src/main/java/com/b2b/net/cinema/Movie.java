@@ -4,44 +4,45 @@ public class Movie {
 
     private String title;
     private String genre;
-    private boolean dubbing;
-    private boolean subtitles;
+    private boolean isDubbing;
+    private boolean isSubtitles;
 
-    public Movie(boolean dubbing, boolean subtitles) {
+    public Movie(String title, String genre, boolean dubbing, boolean subtitles) {
         this.title = title;
         this.genre = genre;
-
+        this.isDubbing = dubbing;
+        this.isSubtitles = subtitles;
     }
 
     public String getTitle() {
-        return "";
+        return title;
     }
 
-    public void setTitle() {
+    public void setTitle(String title) {
         this.title = title;
     }
 
     public String getGenre() {
-        return "";
+        return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(String genre) { this.genre = genre;
 
     }
 
     public boolean isDubbing() {
-        return true;
+        return isDubbing;
     }
 
-    public void setDubbing(boolean dubbing) {
+    public void setDubbing(boolean dubbing) { isDubbing = dubbing;
 
     }
 
     public boolean isSubtitles() {
-        return true;
+        return isSubtitles;
     }
 
-    public void setSubtitles() {
+    public void setSubtitles(boolean subtitles ) { isSubtitles = subtitles;
 
     }
 }
