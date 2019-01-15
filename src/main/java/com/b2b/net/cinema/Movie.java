@@ -45,6 +45,7 @@ public class Movie {
         return subtitles;
     }
 
+
     public void setSubtitles(boolean subtitles) {
         this.subtitles = subtitles;
 
