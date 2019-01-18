@@ -7,14 +7,16 @@ public class Movie {
     private boolean dubbing;
     private boolean subtitles;
 
-    public Movie(boolean dubbing, boolean subtitles) {
+    public Movie(String title, String genre,boolean dubbing, boolean subtitles) {
         this.title = title;
         this.genre = genre;
+        this.dubbing = dubbing;
+        this.subtitles = subtitles;
 
     }
 
     public String getTitle() {
-        return "";
+        return title;
     }
 
     public void setTitle() {
@@ -22,26 +24,26 @@ public class Movie {
     }
 
     public String getGenre() {
-        return "";
+        return genre;
     }
 
     public void setGenre(String genre) {
-
+        this.genre = genre;
     }
 
     public boolean isDubbing() {
-        return true;
+        return dubbing;
     }
 
     public void setDubbing(boolean dubbing) {
-
+        this.dubbing = dubbing;
     }
 
     public boolean isSubtitles() {
-        return true;
+        return subtitles;
     }
 
     public void setSubtitles() {
-
+        this.subtitles = subtitles;
     }
 }
